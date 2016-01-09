@@ -1,0 +1,47 @@
+
+.template {
+  display: none;
+}
+
+*{
+  font-family: sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-family: sans-serif;
+  margin:10% 0 0 0;
+}
+
+ul{
+  padding: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding-right: 5%;
+  display: inline;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 25% 10% 25%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+footer {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+}
