@@ -23,7 +23,9 @@ Content.prototype.toHtml = function () {
   return $portSample;
 };
 
-$(document).ready(function() {
+$('#projects').click( function() {
+  $('#intro').remove();
+
   projects.sort(function (p1, p2) {
     return(new Date(p1.pubDate)) - (new Date(p2.pubDate));
   });
