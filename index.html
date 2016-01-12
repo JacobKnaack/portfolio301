@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Jacob's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
   </head>
   <body>
     <header id="title">
@@ -12,23 +13,28 @@
     </header>
     <nav>
       <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a>projects</a></li>
-        <li><a>instagram</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li id="projects"><a href="#">Projects</a></li>
+        <li><a href="#">Instagram</a></li>
       </ul>
     </nav>
+      <section id="intro">
+        <p>
+          <strong>Welcome to my portfolio web page.</strong><br> To view my work just click on the Projects tab.
+        </p>
+      </section>
       <section id="main">
         <article class="template">
           <h1></h1>
           <div>
-            <time></time>
+            Completed on <time></time>
           </div>
           <section class="portfolio-sample"></section>
           <a id="link" href="">view project</a>
         </article>
       </section>
   <footer>
-    &copy; 2016 Jacob knaack
+    &copy; 2016 Jacob Knaack
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="scripts/projects.js"></script>
