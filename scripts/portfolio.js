@@ -24,7 +24,9 @@ Content.prototype.toHtml = function () {
 };
 
 $('#projects').click( function() {
-  $('#intro').remove();
+  $('#main').show();
+
+  $('#intro').hide();
 
   projects.sort(function (p1, p2) {
     return(new Date(p1.pubDate)) - (new Date(p2.pubDate));
