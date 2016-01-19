@@ -13,37 +13,6 @@ html {
   font-family: Genome;
 }
 
-ul{
-  padding: none;
-  display: flex;
-  justify-content: center;
-}
-
-li {
-  padding-right: 5%;
-  display: inline;
-  font-size: 1.4em;
-}
-
-a {
-  text-decoration: none;
-  color: #0066ff;
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10%;
-}
-
-footer {
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-}
-
 @media only screen and (max-width: 480px) {
   span{
     display:none;
