@@ -6,20 +6,37 @@
     <title>Jacob's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/layout.css">
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <article>
+        <header>
+          <h1>{{title}}</h1>
+          <div>
+            Completed on <time>{{pubDate}}</time>
+          </div>
+        </header>
+        <section>{{{body}}}</section>
+        <a href="{{url}}">View Project</a>
+      </article>
+    </script>
+    
   </head>
   <body>
+
     <header id="title">
       <h1>Jacob Knaack</h1>
       <h2>Web Design</h2>
     </header>
+
     <nav>
       <ul>
-        <li><a href="index.html"><span>Home</span> <img class="icon" src="styles/home_Home.png"></a></li>
+        <li id="home"><a href="index.html"><span>Home</span> <img class="icon" src="styles/home_Home.png"></a></li>
         <li id="about"><a href="#"><span>About</span> <img class="icon" src="styles/about_About.png"></a></li>
         <li id="projects"><a href="#"><span>Projects</span> <img class="icon" src="styles/projects_Projects.png"></a></li>
         <li><a href="#"><span>Social</span> <img class="icon" src="styles/social_Social.png"></a></li>
       </ul>
     </nav>
+
       <section id="intro">
         <p>
           <strong>Welcome to my portfolio web page.</strong><br> To view my work just click on the Projects tab.
@@ -28,20 +45,14 @@
           To learn about me, click the About tab.
         </p>
       </section>
-      <section id="main">
-        <article class="template">
-          <h1></h1>
-          <div>
-            Completed on <time></time>
-          </div>
-          <section class="portfolio-sample"></section>
-          <a id="link" href="">view project</a>
-        </article>
-      </section>
+
+      <section id ="main"></section>
+
   <footer>
     &copy; <strong>2016 Jacob Knaack</strong>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   <script src="scripts/projects.js"></script>
   <script src="scripts/about.js"></script>
  <script src="scripts/portfolio.js"></script>
