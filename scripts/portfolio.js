@@ -4,23 +4,16 @@ function Content(prop) {
   this.title = prop.title,
   this.pubDate = prop.pubDate,
   this.url = prop.url,
+  this.img = prop.img,
   this.body = prop.body;
 };
 
 Content.prototype.toHtml = function () {
-  var $portSample = $('article.template').clone();
+  var projectTemplate = $('#project-template').html();
+  var compileProject = Handlebars.compile(projectTemplate);
+  var html = compileProject(this);
 
-  $portSample.find('h1').html(this.title);
-
-  $portSample.find('time').html(this.pubDate);
-
-  $portSample.find('.portfolio-sample').html(this.body);
-
-  $portSample.find('a#link').attr('href', this.url);
-
-  $portSample.removeClass('template');
-
-  return $portSample;
+  return html;
 };
 
 projects.sort(function (p1, p2) {
