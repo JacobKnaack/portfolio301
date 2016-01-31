@@ -1,5 +1,11 @@
 #banner {
   font-family: Walkaway;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  margin-top: 15%;
 }
 
 .marquee {
@@ -14,6 +20,10 @@
 
 #info {
   font-family: Genome;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5%;
 }
 
 #main, #intro {
