@@ -1,4 +1,4 @@
-/* This section handles all events for styleing*/
+/* This section handles all events for styling*/
 $(document).ready(function() {
   $('#info').hide();
 });

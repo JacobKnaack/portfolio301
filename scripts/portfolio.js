@@ -1,5 +1,3 @@
-//var samples = [];
-
 function Portfolio(prop) {
   this.title = prop.title,
   this.pubDate = prop.pubDate,
@@ -41,20 +39,6 @@ Portfolio.fetch = function() {
   }
 };
 //end of ajax programming section
-
-/*
-projects.sort(function (p1, p2) {
-  return(new Date(p1.pubDate)) - (new Date(p2.pubDate));
-});
-
-projects.forEach(function(sample) {
-  samples.push(new Content(sample));
-});
-
-samples.forEach(function(a) {
-  $('#main').append(a.toHtml());
-});
-*/
 
 $('#projects').click( function() {
   $('#main').fadeIn();
