@@ -1,12 +1,19 @@
+#banner {
+  font-family: Walkaway;
+}
 
-.template {
-  display: none;
+.marquee {
+  font-family: Master_of_break;
 }
 
 #title {
   font-size: 1.5em;
   text-align: center;
   margin:10% 0 0 0;
+}
+
+#info {
+  font-family: Genome;
 }
 
 #main, #intro {

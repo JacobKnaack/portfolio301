@@ -1,47 +1,24 @@
 @font-face {
   font-family: Genome;
-  src: url(Genome-Thin.otf);
+  src: url(../fonts/Genome-Thin.otf);
   font-weight: thin;
 }
 
+@font-face {
+  font-family: Master_of_Break;
+  src: url(../fonts/master_of_break.otf);
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: Walkaway;
+  src: url(../fonts/Walkway-SemiBold.ttf);
+  font-weight: semibold;
+}
+
 html {
-  background: url(background.jpg) center no-repeat;
+  background: url(images/background.jpg) center no-repeat;
   background-size: 200% cover;
-}
-
-*{
-  font-family: Genome;
-}
-
-ul{
-  padding: none;
-  display: flex;
-  justify-content: center;
-}
-
-li {
-  padding-right: 5%;
-  display: inline;
-  font-size: 1.4em;
-}
-
-a {
-  text-decoration: none;
-  color: #0066ff;
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10%;
-}
-
-footer {
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
 @media only screen and (max-width: 480px) {
