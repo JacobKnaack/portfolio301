@@ -1,9 +1,22 @@
+#logo {
+  height: 8em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mini-logo {
+  height: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #banner {
   font-family: Walkaway;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  position: fixed;
   width: 100%;
   margin-top: 15%;
 }
@@ -15,7 +28,7 @@
 #title {
   font-size: 1.5em;
   text-align: center;
-  margin:10% 0 0 0;
+  margin: 0 0 0 0;
 }
 
 #info {
@@ -27,13 +40,17 @@
 }
 
 #main, #intro {
-  font-size: 1.4em;
+  font-size: 1.5em;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10% 25% 10% 25%;
+}
+
+#intro p {
+  text-align: justify;
 }
 
 .icon {

@@ -10,4 +10,6 @@ Currently includes a simple wireframe.
 
 1/18 - Implemented my Handlebars template and added smacss categorization
 
-1/1 - added ajax requests from a json file and some extra styling
+2/1 - added ajax requests from a json file and some extra styling
+
+2/3 - added logo, fixed some events, added reduce and map functions for novelty.
