@@ -11,8 +11,6 @@
 
     $('#intro').hide();
 
-    $('footer').hide();
-
     if ($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
       $('footer').fadeIn();
     } else {
@@ -33,7 +31,7 @@
       $('footer').fadeIn();
     } else {
       $('footer').fadeOut();
-    }
+    };
   });
 
   $('#home').click(function () {
@@ -49,7 +47,7 @@
       $('footer').fadeIn();
     } else {
       $('footer').fadeOut();
-    }
+    };
   });
 
   $('#title').click(function() {

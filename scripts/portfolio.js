@@ -22,7 +22,7 @@
       return(new Date(p1.pubDate)) - (new Date(p2.pubDate));
     });
 
-    projects.forEach(function(sample) {
+    projects.map(function(sample) {
       Portfolio.all.push(new Portfolio(sample));
     });
   };
@@ -38,6 +38,14 @@
         renderProjects.show();//call function again to render the page
       });
     }
+  };
+
+  Portfolio.funFacts = function() {
+    var funFacts = ['here', 'is', 'a' , 'fun', 'fact'];
+    funFacts.reduce(function(fact, words) {
+      return fact + ' ' + words;
+    }, '');
+    $('footer').append(funFacts);
   };
 
   module.Portfolio = Portfolio;
