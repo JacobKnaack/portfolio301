@@ -1,11 +1,12 @@
 @font-face {
   font-family: Genome;
-  src: url(Genome-thin.otf);
+  src: url(Genome-Thin.otf);
   font-weight: thin;
 }
 
 html {
-  background: url(background.jpg) center;
+  background: url(background.jpg) center no-repeat;
+  background-size: 200% cover;
 }
 
 *{
@@ -41,4 +42,10 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  span{
+    display:none;
+  }
 }

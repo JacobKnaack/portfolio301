@@ -18,3 +18,8 @@
   justify-content: center;
   margin: 10% 25% 10% 25%;
 }
+
+.icon {
+  height:40px;
+  display: block;
+}

@@ -23,20 +23,32 @@ Content.prototype.toHtml = function () {
   return $portSample;
 };
 
+projects.sort(function (p1, p2) {
+  return(new Date(p1.pubDate)) - (new Date(p2.pubDate));
+});
+
+projects.forEach(function(sample) {
+  samples.push(new Content(sample));
+});
+
+samples.forEach(function(a) {
+  $('#main').append(a.toHtml());
+});
+
 $('#projects').click( function() {
-  $('#main').show();
+  $('#main').fadeIn();
 
   $('#intro').hide();
 
-  projects.sort(function (p1, p2) {
-    return(new Date(p1.pubDate)) - (new Date(p2.pubDate));
-  });
-
-  projects.forEach(function(sample) {
-    samples.push(new Content(sample));
-  });
-
-  samples.forEach(function(a) {
-    $('#main').append(a.toHtml());
-  });
+  $('footer').hide();
 });
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+    $('footer').fadeIn();
+  } else {
+    $('footer').fadeOut();
+  }
+});
+
+$('#main').hide();
