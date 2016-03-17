@@ -1,10 +1,10 @@
 [
   {
-    "title":    "Project 1 Title",
-    "pubDate":  "2015-5-14",
+    "title":    "Shapes n'Stuff",
+    "pubDate":  "2016-2-27",
     "url":      "https://www.google.com/?gws_rd=ssl#q=fake+url",
     "img":      "",
-    "body":     "<p>This would be a short description of the work I've done.</p>"
+    "body":     "<p>A simple drawing app that lets users use shapes to draw on an html canvas.  Also allows users to easily upload and edit photos and images.</p>"
   },
   {
     "title":    "Project 2 Title",

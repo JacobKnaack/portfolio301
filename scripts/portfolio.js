@@ -40,13 +40,5 @@
     }
   };
 
-  Portfolio.funFacts = function() {
-    var funFacts = ['here', 'is', 'a' , 'fun', 'fact'];
-    funFacts.reduce(function(fact, words) {
-      return fact + ' ' + words;
-    }, '');
-    $('footer').append(funFacts);
-  };
-
   module.Portfolio = Portfolio;
 })(window);

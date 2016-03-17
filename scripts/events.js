@@ -6,6 +6,12 @@
     $('#main').hide();
   });
 
+  $('#social').click(function () {
+    $('#main').fadeOut();
+    $('p:first').text('Currently I\'m only sharing my github information.  Feel free to check out my repositories and see what I\'m currently working on.');
+    $('p:nth-of-type(2)').html('<a href="http://www.github.com/JacobKnaack" target="_blank">My Repos</a>');
+  });
+
   $('#projects').click( function() {
     $('#main').fadeIn();
 
@@ -50,9 +56,9 @@
     };
   });
 
-  $('#title').click(function() {
-    $('#banner').fadeOut(500);
-    $('#info').fadeIn(500);
-    $('footer').fadeIn(500);
+  $('#banner').click(function() {
+    $('#banner').fadeOut(1000);
+    $('#info').fadeIn(3000);
+    $('footer').fadeIn(3000);
   });
 })(window);
